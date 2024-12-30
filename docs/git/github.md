@@ -38,3 +38,17 @@ If you're setting up a code repository for the first time, there are a few items
     - Protect Sensitive Data: Never commit sensitive information (e.g., API keys, credentials). Use tools like dotenv or secrets management.
     - Enable Branch Protection Rules: Prevent direct pushes to the main branch. Require PR reviews and status checks (e.g., CI tests) before merging.
     - Enable Secret Scanning: Use GitHub's secret scanning to detect leaked secrets in your repository.
+9. Example repo structure:
+    ```
+    my-awesome-project/
+    │
+    ├── src/               # Source code
+    ├── tests/             # Test files
+    ├── docs/              # Documentation
+    ├── README.md          # Project overview
+    ├── .gitignore         # Ignored files
+    ├── LICENSE            # License information
+    └── .github/           # GitHub-specific files (e.g., PR templates, workflows)
+    ```
+
+
