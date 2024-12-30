@@ -1,8 +1,12 @@
 # GitHub
 
+1. [Initial Setup](#initial-setup)
+1. [GitHub Actions](#github-actions)
+    1. [Key Features](#key-features)
+
 ## Initial Setup
 
-If you're setting up a code repository for the first time, there are a few items to consider to ensure you set yourself up for success in the long run.
+If you're setting up a code repository for the first time, there are a few items to consider to ensure you set yourself up for success.
 
 1. Repository Structure and Naming
     - Name the Repository Clearly: Use a descriptive name that reflects the project's purpose.
@@ -23,7 +27,6 @@ If you're setting up a code repository for the first time, there are a few items
         .terraform.lock.hcl
         ```
     - `CHANGELOG.md`: Optional but useful for tracking major changes between releases.
-
 4. Branching Strategy
     - Default Branch: Set the default branch to main (or master, depending on your preference).
 5. Version Control and Tagging
@@ -51,4 +54,20 @@ If you're setting up a code repository for the first time, there are a few items
     └── .github/           # GitHub-specific files (e.g., PR templates, workflows)
     ```
 
+## GitHub Actions
+
+GitHub Actions is designed to:
+
+- Automate workflows: Streamline repetitive tasks like testing, building, and deploying code.
+- Enhance CI/CD pipelines: Enable continuous integration (CI) and continuous delivery/deployment (CD) directly within GitHub.
+- Integrate with tools and services: Easily connect with third-party tools or APIs to extend functionality.
+- Empower collaboration: Facilitate team workflows by triggering actions based on repository events.
+
+### Key Features
+
+- Event-driven workflows: Trigger workflows on GitHub events like push, pull_request, issue, or custom events.
+- Customizable YAML configuration: Define workflows using .yml files stored in the .github/workflows/ directory.
+- Reusable actions: Leverage prebuilt actions from the GitHub Marketplace or create custom actions.
+- Cross-platform support: Run jobs on Linux, macOS, or Windows environments.
+- Integration with secrets: Securely use sensitive data (e.g., API keys, credentials) in workflows.
 
